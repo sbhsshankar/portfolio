@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #fafafa;
+    --secondary-color: #212121;
+}
+.dark-mode{
+    --primary-color: #212121;
+    --secondary-color: #fafafa;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+.hero nav{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: #41a450;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 11%;
+}
+.info h1{
+    font-size: 70px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+span{
+    color: #41a450;
+}
+.info p{
+    color: var(--secondary-color);
+    line-height: 24px;
+}
+.info a{
+    background-color: #41a450;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+   margin: 30px 0;
+   border-radius: 4px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+.img-box img{
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    margin-bottom: 10%;
+    transition: bottom 1.2s, left 1s;
+}
+.back-img{
+    width: 300px;
+}
+.front-img{
+    width: 200px ;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.img-box:hover .back-img{
+    bottom: 60px;
+}
+.img-box:hover .front-img{
+    left: 54%;
+}
+.social-links{
+    margin: 10%;
+    margin-top: 20px;
+}
+.social-links a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.social-links a:hover{
+    color: #41a450;
+}
+#moon-icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/09a85ebd29.js" crossorigin="anonymous"></script>
+    <title>This Is The Way: Portfolio</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/titwlogo.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">RESUME</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">BRANDS</a></li>
+                <li><a href="">HIRE ME</a></li>
+            </ul>
+            
+            <i class="fa-solid fa-moon" id="moon-icon"></i>
+        </nav>
+        <div class="info">
+            <h1>I'm SBHS <span>Shankar</span></h1>
+            <p> This is my official portfolio website to showcase all my work related web development <br>and UI design.</p>
+            <a href="">Download Resume</a>
+        </div>
+        <div class="img-box">
+            <img src="./images/tri.jpg" class="back-img">
+            <img src="./images/titw.jpg" class = "front-img">
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+
+    <script>
+
+        let moonIcon = document.getElementById("moon-icon");
+
+        moonIcon.onclick = function(){
+            document.body.classList.toggle("dark-mode");
+            if(document.body.classList.contains("dark-mode")){
+                moonIcon.classList = "fa-regular fa-sun"
+                moonIcon.style.color = "#fafafa"
+            }else{
+                moonIcon.classList = "fa-solid fa-moon"
+                moonIcon.style.color = "#212121"
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
